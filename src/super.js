@@ -1,7 +1,14 @@
-var a=1;
+var a = 1;
 
-// TODO collision
-if (this.pos.y === spaceship.pos.y) {
-    if (this.pos.x >= spaceship.pos.x && this.pos.x <= spaceship.pos.x + 100)
-        console.log('OK trafiony', spaceship.pos.x, spaceship.pos.y);
+function info() {
+    for (var i = 10; i > a; i--) {
+        console.log('info',i,a);
     }
+}
+
+document.getElementById("startButton").addEventListener("click", function(event) {
+    // display the current click count inside the clicked div
+    document.getElementById('test').innerHTML = "click count: " + event.detail;
+    info();
+    console.log(event);
+});
