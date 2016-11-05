@@ -1,5 +1,6 @@
 var a = 1;
 var b = 2;
+var c = 3;
 function info() {
     for (var i = 10; i > a; i--) {
         console.log('info',i,a);
